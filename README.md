@@ -1,6 +1,6 @@
 # duck_coder
 
-🦆 **러버덕 디펜스 로그라이트** — 떨어지는 버그를 막으며 코드(LOC)를 쌓는 픽셀 아트 게임. [claude_coder](https://github.com/AItinkerer0/claude_coder) 공유 코어의 **러버덕 에디션**이다.
+🦆 **러버덕 디펜스 로그라이트** — 떨어지는 버그를 막으며 코드(LOC)를 쌓는 픽셀 아트 게임. [claude_coder](https://github.com/tinkerer0/claude_coder) 공유 코어의 **러버덕 에디션**이다.
 
 바닥의 러버덕이 5개 레인에서 좌우로 움직이며 버그를 자동 공격한다. 죽거나 종료하면 ★로 영구 강화 → 다시 도전. **5000 LOC = 배포 성공(승리)**.
 
@@ -27,7 +27,7 @@
 - UI 액센트: 노랑 (`--coral:#f5cf3d`), 메뉴 부제 “친구 전용 러버덕 에디션”
 - 루트 파일: `index.html` + `README.md` 만
 
-형제: [claude_coder](https://github.com/AItinkerer0/claude_coder), [dino_coder](https://github.com/AItinkerer0/dino_coder).
+형제: [claude_coder](https://github.com/tinkerer0/claude_coder), [dino_coder](https://github.com/tinkerer0/dino_coder).
 
 ## Quick start
 
@@ -42,7 +42,7 @@ open index.html   # macOS
 ```
 
 GitHub Pages (`main` 루트, API상 `built`):
-https://aitinkerer0.github.io/duck_coder/
+https://tinkerer0.github.io/duck_coder/
 
 ## 파일 맵
 
