@@ -1,5 +1,11 @@
 # duck_coder
 
+[포트폴리오](https://github.com/tinkerer0/tinkerer0) · [게임 목록](https://github.com/tinkerer0/tinkerer0/blob/main/docs/GAMES.md)
+
+**분류:** 테마 변형 · **상태:** 공개 프로토타입
+
+게임 구조의 원형은 [Claude Coder](https://github.com/tinkerer0/claude_coder)입니다. 이 저장소는 캐릭터와 테마를 바꾼 변형작입니다.
+
 🦆 **러버덕 디펜스 로그라이트** — 떨어지는 버그를 막으며 코드(LOC)를 쌓는 픽셀 아트 게임. [claude_coder](https://github.com/tinkerer0/claude_coder) 공유 코어의 **러버덕 에디션**이다.
 
 바닥의 러버덕이 5개 레인에서 좌우로 움직이며 버그를 자동 공격한다. 죽거나 종료하면 ★로 영구 강화 → 다시 도전. **5000 LOC = 배포 성공(승리)**.
