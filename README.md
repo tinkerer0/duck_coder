@@ -1,68 +1,33 @@
 # duck_coder
 
-[포트폴리오](https://github.com/tinkerer0/tinkerer0) · [게임 목록](https://github.com/tinkerer0/tinkerer0/blob/main/docs/GAMES.md)
+**러버덕이 떨어지는 버그를 막으며 코드 5000줄을 채우는 픽셀 디펜스 로그라이트.**
 
-**분류:** 테마 변형 · **상태:** 공개 프로토타입
+**[▶ 브라우저에서 바로 플레이](https://tinkerer0.github.io/duck_coder/)**
 
-게임 구조의 원형은 [Claude Coder](https://github.com/tinkerer0/claude_coder)입니다. 이 저장소는 캐릭터와 테마를 바꾼 변형작입니다.
+![플레이 화면](docs/images/gameplay.gif)
 
-🦆 **러버덕 디펜스 로그라이트** — 떨어지는 버그를 막으며 코드(LOC)를 쌓는 픽셀 아트 게임. [claude_coder](https://github.com/tinkerer0/claude_coder) 공유 코어의 **러버덕 에디션**이다.
+[claude_coder](https://github.com/tinkerer0/claude_coder)의 러버덕 캐릭터판입니다. 바닥의 러버덕이 다섯 줄로 떨어지는 버그를 막고, 버틴 만큼 LOC(코드 줄 수)가 쌓입니다. 한 판이 끝나면 모은 ★로 무기 17종과 능력치를 영구 강화하고 다시 도전합니다. 5000 LOC를 채우면 "배포 성공"입니다.
 
-바닥의 러버덕이 5개 레인에서 좌우로 움직이며 버그를 자동 공격한다. 죽거나 종료하면 ★로 영구 강화 → 다시 도전. **5000 LOC = 배포 성공(승리)**.
+← → 또는 A / D로 줄을 옮기면 공격은 자동입니다. 1·2·3은 게임 속도, M은 소리, Esc는 이번 판 끝내기입니다. 모바일에서는 화면을 눌러 옮깁니다.
 
-## Status
+## 직접 실행
 
-- **Last reviewed:** 2026-07-17 (base `a53f2cb`)
-- **Maturity:** 플레이 가능한 단일 HTML 스킨/포크. 이 README 작성 시 게임을 실행·플레이하지는 않았다.
-- **License:** 저장소에 라이선스 파일 없음 — 재사용 조건은 현재 명시되지 않음.
-
-## 공유 코어 vs 이 에디션
-
-**공유 (claude_coder / dino_coder와 동일 계열 로직):**
-
-- 무기 17종 · 한 판 1개 장착 · 영구 스탯 3종 · 테마 5종
-- 버그 타입·5레인·자동 공격·★ 상점·승리 조건 5000 LOC
-- 조작: ←→ 또는 A/D, `M` 음소거, `Esc` 종료, `1`/`2`/`3` 배속, **터치 이동**
-- 바닐라 JS + Canvas 단일 `index.html`, 픽셀 폰트 Galmuri(jsDelivr CDN)
-- 무기 중 “러버덕 군단”은 공유 코어에도 있는 소환 무기(에디션 전용 무기가 아님)
-
-**이 저장소 차이:**
-
-- 주인공: `SPR.hero` 러버덕 스프라이트, 배경에 흐릿한 러버덕 떼
-- 세이브 키: `duck_coder_v1` (claude/dino 세이브와 **공유되지 않음**)
-- UI 액센트: 노랑 (`--coral:#f5cf3d`), 메뉴 부제 “친구 전용 러버덕 에디션”
-- 루트 파일: `index.html` + `README.md` 만
-
-형제: [claude_coder](https://github.com/tinkerer0/claude_coder), [dino_coder](https://github.com/tinkerer0/dino_coder).
-
-## Quick start
-
-저장소 루트에서 (이 리프레시 중에는 **실행하지 않음**):
+빌드가 필요 없는 HTML 파일 하나입니다.
 
 ```sh
-python3 -m http.server 8080
-# 브라우저: http://localhost:8080/
-
-# 또는
-open index.html   # macOS
+git clone https://github.com/tinkerer0/duck_coder.git
+cd duck_coder
+python3 -m http.server 8080   # http://localhost:8080 열기
 ```
 
-GitHub Pages (`main` 루트, API상 `built`):
-https://tinkerer0.github.io/duck_coder/
+진행 상황은 이 브라우저(`localStorage`)에만 저장됩니다.
 
-## 파일 맵
+## Feedback
 
-```
-index.html   게임 전부
-README.md    이 문서
-```
+제가 이런 분야를 접한 지 얼마 안 돼서 부족한 점이 많습니다. 고칠 점이나 알려주실 내용이 있다면 issue나 PR로 남겨주시면 너무 감사하겠습니다.
 
-## 데이터 · 네트워크 · 안전
-
-- **저장:** `localStorage` 키 `duck_coder_v1` (로컬 브라우저만).
-- **네트워크:** 게임 서버 없음. Galmuri 폰트 CDN 요청 가능.
-- **비밀·자격증명:** 없음.
+I am still new to this, so there is a lot to improve. Issues and pull requests with fixes or suggestions are very welcome.
 
 ## License
 
-라이선스 파일 없음.
+[MIT](LICENSE)
