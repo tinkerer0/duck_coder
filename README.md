@@ -30,4 +30,4 @@ I am still new to this, so there is a lot to improve. Issues and pull requests w
 
 ## License
 
-[MIT](LICENSE)
+게임 코드는 [MIT](LICENSE)입니다. `index.html`에 남아 있는 Clawd 픽셀 데이터(게임에서는 쓰지 않음)는 Anthropic의 Claude 마스코트를 따라 그린 것이라 이 라이선스에 포함되지 않습니다.
